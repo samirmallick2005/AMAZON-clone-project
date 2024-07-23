@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+:root{
+    --primary-col: #131921;
+    --secondary-col: #232f3e;
+    --third-col: #ffcd50;
+}
+body{
+    background-color: #e3e6e6;
+}
+.nav{
+    width: 100vw;
+}
+.top-nav{
+    background-color: var(--primary-col);
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.top-nav div{
+    margin: auto;
+}
+.hover{
+    padding: 5px;
+}
+.hover:hover{
+    border: 1px solid white;
+}
+.logo img{
+    width: 80px;
+    height: 50px;
+    transform: scale(0.7);
+}
+.first-line {
+    font-size: x-small;
+    display: flex;
+}
+
+.second-line {
+    font-size: medium;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.category{
+    display: flex;
+}
+.category input{
+    width: 29vw;
+}
+.search{
+    background-color: #febd69;
+    border: none;
+}
+.search:hover{
+    background-color: var(--third-col);
+}
+.language select{
+    background: none;
+    color: white;
+    font-size: medium;
+    border: none;
+}
+.bottom-nav{
+    background-color: var(--secondary-col);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.bottom-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bottom-left div{
+    margin: auto;
+    font-weight: bolder;
+    font-size: 13px;
+}
+.all{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.all>img {
+    transform: scale(0.7);
+}
+.bottom-right{
+    font-weight: bolder;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.section{
+    position: relative;
+    width: 100vw;
+}
+.background{
+    width: 100%;
+}
+.background>img{
+    width: 100%;
+    position: relative;
+}
+.main{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.bg-change{
+    display: flex;
+    justify-content: space-between;
+}
+.bg-change button{
+    border: none;
+    width: 5%;
+    height: 20vh;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-change img{
+    transform: scale(3);
+}
+.amazon-welcome{
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.ads{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+    margin: 5px auto;
+}
+.card div{
+    margin: 5px auto;
+}
+.ad-image-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    overflow: hidden;
+    font-size: small;
+}
+.ad-image img{
+    width: 100%;
+}
+.horizontal{
+    background-color: white;
+    width: 97%;
+    margin: auto;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    height: auto;
+    margin-bottom: 10px;
+}
+.horizontal-ad{
+    display: flex;
+    overflow-x: scroll;
+}
+.horizontal div{
+    margin: 10px;
+}
+.footer{
+    width: 100vw;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer div{
+    margin: 3px;
+}
+.sign-in button{
+    width: 15vw;
+    padding: 5px;
+    font-size: small;
+    font-weight: bolder;
+    background-color: var(--third-col);
+    border: none;
+    border-radius: 4px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-weight: bolder;
+}
+.back-to-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: absolute;
+    
+}
+.back-to-top button{
+    width: 100vw;
+    height: 60px;
+    background-color: var(--secondary-col);
+    color: white;
+}
+@media (min-width:1429px) {
+    /* .navbar{
+        width: 100vw;
+    }
+    .footer{
+        width: 100vw;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section{
+        width: 1429px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } */
+}
+@media (max-width:990px) {
+    .nav{
+        width: 100vw;
+    }
+    .top-nav div , .bottom-nav div , .category select , .category input , .language select , .amazon-welcome , .horizontal , .sign-in button{
+        font-size: small;
+    }
+    .card{
+        font-size: small;
+    }
+    .ad-image{
+        font-size: small;
+    }
+    .horizontal img{
+        height: 100px;
+    }
+}
+@media (max-width:805px) {
+    .top-nav div , .bottom-nav div{
+        font-size: xx-small;
+    }
+    .amazon-welcome{
+        font-size: xx-small;
+    }
+    .card{
+        font-size: xx-small;
+    }
+    .ad-image{
+        font-size: xx-small;
+    }
+    .footer a{
+        font-size: xx-small;
+    }
+    .footer , .sign-in .amazon-welcome{
+        font-size: xx-small;
+        height: 50px;
+    }
+    .sign-in button{
+        font-size: xx-small;
+    }
+}
+@media (max-width:577px) {
+    .section{
+        width: 100vw;
+    }
+    .horizontal img{
+        height: 50px;
+    }
+    .top-nav div , .bottom-nav div{
+        font-size: 6px;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .bg-change button{
+        height: 10vh;
+    }
+    .bg-change img{
+        transform: scale(1);
+    }
+    .card{
+        width: 40vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .ads{
+        display: flex;
+        justify-content: center;
+    }
+    main {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    
+}
+@media (max-width:441px) {
+    .logo img{
+        width: 20px;
+    }
+    .amazon-welcome{
+        /* height: 10px; */
+        font-size: 4px;
+    }
+    .card{
+        width: 30vw;
+    }
+    .sign-in button{
+        font-size: 5px;
+    }
+    main {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    option{
+        font-size: 5px;
+    }
+}
